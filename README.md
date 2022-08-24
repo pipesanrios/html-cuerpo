@@ -5,4 +5,4 @@ Se ha utilizado CSS basico, lo ideal seria crear versiones para mostrar desde lo
 
 De esta manera las personas que quieran utlizar estos recursos y les sea mas facil para enseñar y/o aprender desde 0.
 
-Enlace al index en la ultima versión [GitHub Pages](https://pipesanrios.github.io/html-cuerpo/).
+Enlace al index en la ultima versión [Ver pagina con el resultado](https://pipesanrios.github.io/html-cuerpo/).
