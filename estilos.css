@@ -1,0 +1,146 @@
+body{ 
+    margin: 50px;  
+    background-color: rgb(248, 196, 196);
+    display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+    justify-content: center;
+}
+header{
+    border: 5px solid black; 
+    height: 100px;
+    width: 100px;
+    border-radius: 0 0 10px 10px;
+}
+header .cabello{
+    margin-top: -15px;
+    width: 100%;
+    height: 20px;
+    background-color: rgb(238, 198, 20);
+    border-radius: 15px 0 0 0;
+}
+.cara{
+    margin-top: 15px;
+    width: 100%;
+    display:flex;
+	flex-flow: row wrap;
+    justify-content: space-around;
+}
+.areaOjos{
+    width: 100%;
+    display:flex;
+	flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.ojos{
+    background-color: aquamarine;
+    width: 15px;
+    height: 15px;
+    border-top: 1px dotted black;
+    border-radius: 50%;
+}
+.cejas{
+    margin-top: -10px;
+    width: 15px;
+    height: 1px;
+    border-top: 2px solid black ;
+}
+
+.areaNariz{
+    margin: 5px 0 0 0;
+    width: 100%;
+    display:flex;
+	flex-flow: row wrap;
+    justify-content: space-between;
+}
+.nariz{
+    background-color: black;
+    width: 15px;
+    height: 15px;
+}
+.boca{
+    margin-top: 10px;
+    width: 80%;
+    height: 10px;
+    background-color: black;
+    border-radius: 0 0 20px 20px ;
+}
+.orejas{
+    width: 8px;
+    height: 15px;  
+    border: 5px solid black;
+    border-radius: 10px;  
+}
+.oI{
+    margin-left: -19px;
+}
+.oD{
+    margin-right: -19px;
+}
+.cuello{
+    margin-top: 14px;
+    width: 40%;
+    height: 20px;
+    border: 5px solid black;
+}
+.cSuperior{
+    display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+    justify-content: center;
+    width: 100%;
+}
+.pecho{
+    margin-top: 20px;
+    border: 5px solid black; 
+    height: 200px;
+    width: 150px;
+    border-radius: 0 0 10px 10px;
+}
+.brazos{
+    margin-top: 20px;
+    height: 150px;
+    width: 50px; 
+    border: 5px solid black;    
+}
+.bI{
+    border-radius: 10px  0 0 0;
+}
+.bD{
+    border-radius: 0 10px 0 0;
+}
+.manos{
+    margin: 150px 0px 0px -5px;
+    height: 50px;
+    width: 50px; 
+    border: 5px solid black; 
+
+}
+
+.cInferior{ 
+    display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+    justify-content: center;
+    width: 100%;
+}
+.piernas{
+    margin: -5px 3px 3px 0;
+    border: 5px solid black; 
+    height: 200px;
+    width: 50px;
+}
+footer{
+    display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+    justify-content: center;
+    width: 100%;
+}
+.pies{
+    margin: -6px 3px 3px 0;
+    border: 5px solid black; 
+    height: 30px;
+    width: 70px;
+}
