@@ -1,146 +1,174 @@
-body{ 
+body {
     margin: 50px;  
     background-color: rgb(248, 196, 196);
-    display:flex;
-	flex-direction:row;
-	flex-wrap:wrap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
 }
-header{
+
+header {
     border: 5px solid black; 
-    height: 100px;
+    height: 120px;
     width: 100px;
-    border-radius: 0 0 10px 10px;
-}
-header .cabello{
-    margin-top: -15px;
-    width: 100%;
-    height: 20px;
-    background-color: rgb(238, 198, 20);
-    border-radius: 15px 0 0 0;
-}
-.cara{
-    margin-top: 15px;
-    width: 100%;
-    display:flex;
-	flex-flow: row wrap;
-    justify-content: space-around;
-}
-.areaOjos{
-    width: 100%;
-    display:flex;
-	flex-flow: row wrap;
-    justify-content: space-around;
+    border-radius: 50% 50% 10px 10px;
+    position: relative;
+    background-color: rgb(255, 220, 177); /* Color piel */
 }
 
-.ojos{
-    background-color: aquamarine;
-    width: 15px;
-    height: 15px;
-    border-top: 1px dotted black;
+header .cabello {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 30px;
+    background-color: rgb(100, 72, 50);
+    border-radius: 50% 50% 0 0;
+}
+
+.cara {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.areaOjos {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+}
+
+.ojos {
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ojos::after {
+    content: '';
+    background-color: black;
+    width: 8px;
+    height: 8px;
     border-radius: 50%;
 }
-.cejas{
-    margin-top: -10px;
-    width: 15px;
-    height: 1px;
-    border-top: 2px solid black ;
+
+.cejas {
+    position: absolute;
+    top: -8px;
+    width: 20px;
+    height: 4px;
+    background-color: black;
+    border-radius: 10px;
 }
 
-.areaNariz{
-    margin: 5px 0 0 0;
-    width: 100%;
-    display:flex;
-	flex-flow: row wrap;
-    justify-content: space-between;
-}
-.nariz{
-    background-color: black;
-    width: 15px;
-    height: 15px;
-}
-.boca{
+.areaNariz {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 10px;
-    width: 80%;
-    height: 10px;
+}
+
+.nariz {
     background-color: black;
-    border-radius: 0 0 20px 20px ;
-}
-.orejas{
-    width: 8px;
-    height: 15px;  
-    border: 5px solid black;
-    border-radius: 10px;  
-}
-.oI{
-    margin-left: -19px;
-}
-.oD{
-    margin-right: -19px;
-}
-.cuello{
-    margin-top: 14px;
-    width: 40%;
+    width: 10px;
     height: 20px;
+    border-radius: 0 0 50% 50%;
+}
+
+.boca {
+    margin-top: 10px;
+    width: 50%;
+    height: 10px;
+    background-color: red;
+    border-radius: 0 0 50px 50px;
+}
+
+.orejas {
+    position: absolute;
+    top: 40px;
+    width: 20px;
+    height: 40px;
+    background-color: rgb(255, 220, 177);
+    border-radius: 50%;
+    border: 3px solid black;
+}
+
+.oI {
+    left: -25px;
+}
+
+.oD {
+    right: -25px;
+}
+
+.cuello {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 220, 177);
     border: 5px solid black;
+    margin: 0 auto;
+    border-radius: 10px;
 }
-.cSuperior{
-    display:flex;
-	flex-direction:row;
-	flex-wrap:wrap;
-    justify-content: center;
-    width: 100%;
-}
-.pecho{
+
+.cSuperior {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
     margin-top: 20px;
+}
+
+.pecho {
     border: 5px solid black; 
-    height: 200px;
-    width: 150px;
-    border-radius: 0 0 10px 10px;
+    height: 100px;
+    width: 80px;
+    background-color: rgb(255, 220, 177);
+    border-radius: 10px;
 }
-.brazos{
+
+.brazos {
+    height: 120px;
+    width: 40px; 
+    border: 5px solid black;  
+    background-color: rgb(255, 220, 177); 
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.manos {
+    height: 40px;
+    width: 40px;
+    background-color: rgb(255, 220, 177);
+    border: 5px solid black; 
+    border-radius: 50%;
+}
+
+.cInferior {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
     margin-top: 20px;
+}
+
+.piernas {
     height: 150px;
-    width: 50px; 
-    border: 5px solid black;    
-}
-.bI{
-    border-radius: 10px  0 0 0;
-}
-.bD{
-    border-radius: 0 10px 0 0;
-}
-.manos{
-    margin: 150px 0px 0px -5px;
-    height: 50px;
-    width: 50px; 
-    border: 5px solid black; 
-
-}
-
-.cInferior{ 
-    display:flex;
-	flex-direction:row;
-	flex-wrap:wrap;
-    justify-content: center;
-    width: 100%;
-}
-.piernas{
-    margin: -5px 3px 3px 0;
-    border: 5px solid black; 
-    height: 200px;
     width: 50px;
+    background-color: rgb(255, 220, 177);
+    border: 5px solid black;
+    border-radius: 20px;
 }
-footer{
-    display:flex;
-	flex-direction:row;
-	flex-wrap:wrap;
-    justify-content: center;
-    width: 100%;
-}
-.pies{
-    margin: -6px 3px 3px 0;
-    border: 5px solid black; 
+
+.pies {
     height: 30px;
-    width: 70px;
+    width: 50px;
+    background-color: rgb(255, 220, 177);
+    border: 5px solid black;
+    border-radius: 50px 50px 0 0;
+    margin-top: -5px;
 }
